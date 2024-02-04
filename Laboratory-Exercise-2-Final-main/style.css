@@ -1,0 +1,302 @@
+body {
+    font-family:'Roboto', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.header-fix {
+    height: 85px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #eee;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 75);
+}
+
+.header-container {
+    width: 1024px;
+    margin: auto;
+}
+
+.container {
+    width: 1024px;
+    margin: 84px auto 10px;
+    border-radius: 5px;
+    border: 1px solid #bbbbbb;
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+.aside {
+    float: right;
+    width: 25%;
+    margin-left: 1%;
+    margin-right: 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bbbbbb;
+    background-color: white;
+}
+
+aside h3 {
+    margin-bottom: 0px;
+}
+
+aside ul {
+    margin-top: 10px;
+}
+
+article {
+    text-align: justify;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+thead td {
+    font-weight: bold;
+}
+
+aside span {
+    font-weight: bold;
+}
+
+/* ============================================== */
+
+.withStyle {
+    width: 71%;
+    table-layout: fixed;
+    border: 2px solid #597aed;
+    background-color: #3d4bff;
+    border-collapse: collapse;
+    font-family: 'Shadows Into Light', cursive;
+}
+.withStyle tr td {
+    padding: 13px;   /*Para lang ni ma tag-ing ang sample*/
+}
+
+.withStyle thead th:nth-child(1) {
+    width: 35%;
+}
+
+.withStyle thead th:nth-child(2) {
+    width: 20%;
+}
+
+.withStyle thead th:nth-child(3) {
+    width: 20%;
+}
+
+.withStyle thead th:nth-child(4) {
+    width: 25%;
+}
+
+.withStyle thead tr{
+    color: white;
+    font-size: 1.5em;
+    text-align: left;
+    background-image: url('bg-table.jpg');
+}
+
+.withStyle tfoot tr{
+    color: white;
+    font-size: 1.5em;
+    text-align: left;
+    background-image: url('bg-table.jpg');
+}
+
+.withStyle tbody tr:nth-child(odd) {
+    background-color: #9ca2ce;
+}
+
+.withStyle tbody tr:nth-child(even) {
+    background-color: #7d87e6;
+}
+
+/*.withStyle tbody th {
+    color: #f2f1ec;      wakoy sure ug sakto ba ning dapita maam kay walay th sa akong tbody, puro ra td 
+    font-size: 1.2em;      wala pud yamo ang color white sa tbody and output
+}*/
+
+.withStyle caption {
+    font-size: 1.5em;
+    padding: 20px;
+    font-style: italic;
+    caption-side: bottom;
+    color: #0041c3;
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+/* ================================================================== */
+
+#datatable-container {
+    width: 71%;
+}
+
+#datatable-header-search {
+    display: inline-flex;
+}
+
+#datatable-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 8px;
+    
+}
+
+#datatable-header-search {
+    margin-left: auto;
+}
+
+#datatable-container table {
+    width: 100%;
+    background-color: #ccc;
+    border: 1px solid #bbb;
+    border-collapse: collapse;
+}
+
+#datatable-container table thead th {
+    font-size: 1.15em;
+    font-weight: bold;
+    padding: 5px;
+    color: #2b2b2b;
+    text-align: center;
+    background-color: #ccc;
+    border-top: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+}
+
+#datatable-container table thead td {
+    border: 1px solid #bbb;
+}
+
+#datatable-container thead .sort_asc {
+    background-image: url(./images/sort_asc.png);
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+#datatable-container thead .no_sort {
+    background-image: url(./images/sort_both.png);
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+#datatable-container table caption {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-style: italic;
+    caption-side: top;
+    color: #0041c3;
+    text-align: center;
+    letter-spacing: 1px;
+    background-color: #ccc;
+    border-top: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+}
+
+#datatable-container table tbody tr {
+    text-align: center;
+}
+
+#datatable-container table tbody td {
+    font-size: 1em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#datatable-container table tbody tr:nth-child(odd) {
+    background-color: #ddd;
+}
+
+#datatable-container table tbody tr:nth-child(even) {
+    background-color: #eee;
+}
+
+#datatable-container table tfoot td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#datatable-container table tfoot th {
+    text-align: right;
+    border-right: 1px solid #bbb;
+    padding-right: 10px;
+}
+
+#datatable-container table tfoot td {
+    text-align: left;       /*wala naka center ang td or ang >10k*/
+    /* font-weight: bold; */        /*Wala naka bold ug wala naka underline and td sa sample outpur*/
+    /* text-decoration: underline; */
+}
+
+#datatable-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+#datatable-footer-result {
+    margin-top: 20px;
+}
+
+#datatable-footer-paginator {
+    display: inline-flex;
+}
+
+#datatable-footer .pagination {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: 25rem;
+    margin-top: 15px;
+}
+
+#datatable-footer .page:first-child .link {
+    margin-left: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#datatabl-footer .link:not(:disabled) :not(.disabled) {
+    cursor: pointer;
+}
+
+#datatable-footer .link {
+    position: relative;
+    padding: 0.3em 0.6em;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #0041c3;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    text-decoration: none;
+}
+
+#datatable-footer .link.disabled {
+    color: #bbb;
+}
+
+#datatable-footer .link.active {
+    color: white;
+    background-color: #0041c3;
+}
+
+#datatable-footer .page:last-child .link {
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+/* END */
